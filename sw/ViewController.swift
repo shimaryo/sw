@@ -21,7 +21,6 @@ class ViewController: UIViewController {
 
    
     @IBAction func buttan(_ sender: Any) {
-        label.text = "SWift"
     }
     
     
