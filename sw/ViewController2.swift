@@ -10,13 +10,19 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    @IBOutlet weak var TextField: UITextField!
+    @IBOutlet weak var save: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
+    @IBAction func bot(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func Save(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

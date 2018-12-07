@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var buttan: UIButton!
     @IBOutlet weak var label: UILabel!
+    var text1: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         buttan.setTitle("+", for: .normal)
