@@ -8,21 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate{
 
     @IBOutlet weak var buttan: UIButton!
     @IBOutlet weak var label: UILabel!
+    let userDefaults = UserDefaults.standard
+    
     var text1: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         buttan.setTitle("+", for: .normal)
-        label.text = "Hello"
+        label.text = readData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
    
     @IBAction func buttan(_ sender: Any) {
     }
+    
+    func readData() -> String {
+        let str: String = userDefaults.object(forKey:"lecture") as! String
+        return str
+        }
     
     
 }
